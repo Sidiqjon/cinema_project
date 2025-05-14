@@ -4,7 +4,7 @@ import Card from './Card'
 const MovieView = ({movies}) => {
     
   return (
-    <div className='container mx-auto grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 md:gap-5 gap-2'>
+    <div className='container mx-auto grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 md:gap-5 gap-2 mb-5'>
         {
             movies?.map((movie) => (
                 <Card key={movie.id} movie={movie} />

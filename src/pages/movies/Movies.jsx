@@ -10,7 +10,7 @@ const Movies = () => {
 
   return (
     <div>
-      <Genres setGenre={setGenre}/>
+      <Genres setGenre={setGenre} genre={genre}/>
       <MovieView movies={data?.results}/>
       {loading && <Skeleton count={20}/>}
     </div>
