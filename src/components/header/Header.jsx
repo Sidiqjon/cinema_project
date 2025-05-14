@@ -12,35 +12,25 @@ const Header = () => {
       <header>
          <div className="py-4 flex justify-center items-center mx-auto max-h-20 gap-[160px] container">
             <div className="flex-1">
-               <NavLink>
                   <img src={logo} alt="MovieTime Logo" />
-               </NavLink>
             </div>
-            <ul className="flex justify-center items-center gap-12">
-               <NavLink>
+            <ul className="md:flex hidden justify-center items-center gap-12">
                   <li className="flex flex-col items-center  justify-center text-[#C61F1F]">
                      <img src={tv} alt="Tv" />
                      <p>Афиша</p>
                   </li>
-               </NavLink>
-               <NavLink>
                   <li className="flex flex-col items-center  justify-center text-[#A1A1A1]">
                      <img src={tablet} alt="Tablet" />
                      <p>Сеансы</p>
                   </li>
-               </NavLink>
-               <NavLink>
                   <li className="flex flex-col items-center  justify-center text-[#A1A1A1]">
                      <img src={coupon} alt="Coupon" />
                      <p>Билеты</p>
                   </li>
-               </NavLink>
-               <NavLink>
                   <li className="flex flex-col items-center  justify-center text-[#A1A1A1]">
                      <img src={search} alt="Search" />
                      <p>Поиск</p>
                   </li>
-               </NavLink>
             </ul>
             <div className="flex justify-center items-center gap-5">
                <div className="flex items-center justify-center bg-[#1D1D1D80] backdrop-filter-blur-[30px] rounded-[12px] px-9 py-4 gap-2">
