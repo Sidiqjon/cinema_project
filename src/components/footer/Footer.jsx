@@ -26,15 +26,15 @@ const Footer = () => {
             </div>
          </div>
          <div>
-            <h2 className="text-[#FFFFFF] text-[16px] text-weight-[500] mb-5">О нас</h2>
+            <h2 className="text-[#FFFFFF] text-[16px] text-weight-[500] mb-5">About Us</h2>
             <ul className="flex flex-col gap-5 text-[#A1A1A1]">
                <li className="flex cursor-pointer gap-1.5">
                   <img src={file} alt="" />
-                  <a href="#">Публичная оферта</a>
+                  <a href="#">Public Offer</a>
                </li>
                <li className="flex gap-1.5">
                   <img src={add} alt="" />
-                  <a href="#">Реклама</a>
+                  <a href="#">Advertising</a>
                </li>
                <li className="flex gap-1.5">
                   <img src={faq} alt="" />
@@ -42,38 +42,38 @@ const Footer = () => {
                </li>
                <li className="flex gap-1.5">
                   <img src={phone} alt="" />
-                  <a href="#">Контакты</a>
+                  <a href="#">Contacts</a>
                </li>
             </ul>
          </div>
          <div>
-            <h2 className="text-[#FFFFFF] text-[16px] text-weight-[500] mb-5">Категории</h2>
+            <h2 className="text-[#FFFFFF] text-[16px] text-weight-[500] mb-5">Categories</h2>
             <ul className="flex flex-col gap-5 text-[#A1A1A1]">
                <li className="flex cursor-pointer gap-1.5">
                   <img src={film} alt="" />
-                  <a href="#">Кино</a>
+                  <a href="#">Movies</a>
                </li>
                <li className="flex gap-1.5">
                   <img src={theatre} alt="" />
-                  <a href="#">Театр</a>
+                  <a href="#">Theatre</a>
                </li>
                <li className="flex gap-1.5">
                   <img src={concert} alt="" />
-                  <a href="#">Концерты</a>
+                  <a href="#">Concerts</a>
                </li>
                <li className="flex gap-1.5">
                   <img src={sport} alt="" />
-                  <a href="#">Спорт</a>
+                  <a href="#">Sports</a>
                </li>
             </ul>
          </div>
          <div className="flex flex-col gap-14">
             <div className="flex-1">
-               <h2 className="text-[#FFFFFF] text-[16px] text-weight-[500] mb-5">Связаться с нами</h2>
+               <h2 className="text-[#FFFFFF] text-[16px] text-weight-[500] mb-5">Contact Us</h2>
                <p className="text-primary">+998 (95) 897-33-38</p>
             </div>
             <div>
-               <p className="text-[#FFFFFF] text-[16px] text-weight-[500] mb-5">Социальные сети</p>
+               <p className="text-[#FFFFFF] text-[16px] text-weight-[500] mb-5">Social Media</p>
                <div className="flex gap-5">
                   <img src={instagram} alt="Instagram"/>
                   <img src={facebook} alt="Facebook"/>

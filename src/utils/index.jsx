@@ -4,7 +4,7 @@ import logo from "@/assets/movietime.svg";
 export const Loading = () => {
    return (
       <div className="w-full h-screen grid place-items-center">
-         <img className="w-[120px]" src={logo} alt="" />
+         <img className="w-[120px]" src={logo} alt="Logo" />
       </div>
    );
 };
