@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router-dom";  
 import logo from "@/assets/movietime.svg";
 import search from "@/assets/search.svg";
 import tv from "@/assets/tv.svg";
