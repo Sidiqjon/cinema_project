@@ -44,9 +44,9 @@ const HomeSwiper = ({ movies }) => {
                     })}
                   </p>
                   <ul className="flex gap-2 justify-center mb-4 mt-2 text-sm">
-                    <li>1h 34m</li>
-                    <li>EN</li>
-                    <li>6+</li>
+                    {/* <li>{item.runtime} min</li> */}
+                    <li>{item.original_language.toUpperCase()}</li>
+                    {/* <li>6+</li> */}
                   </ul>
                   <div className="flex justify-center items-center gap-[10px] w-[280px] h-[52px] rounded-[12px] bg-white text-[#C61F1F] cursor-pointer">
                     <IoPlay className="text-2xl" />
@@ -76,7 +76,7 @@ const HomeSwiper = ({ movies }) => {
             <SwiperSlide key={item.id}>
               <img
                 src={url + item.backdrop_path}
-                className="transform transition-transform duration-500 hover:scale-105 hover:-translate-y-1 h-[100px] object-cover w-full"
+                className="h-[100px] object-cover w-full"
               />
             </SwiperSlide>
           ))}

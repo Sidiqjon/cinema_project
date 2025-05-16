@@ -6,7 +6,8 @@ import HomeSwiper from '@/components/swiper/Swiper';
 
 const Home = () => {
   const {data,error,loading} = useFetch("/discover/movie")
-
+  console.log(data);
+  
   return (
     <div>
       <HomeSwiper movies={data?.results}/>
