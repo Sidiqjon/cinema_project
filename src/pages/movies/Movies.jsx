@@ -31,7 +31,7 @@ import { useSearchParams} from 'react-router-dom'
 
 const Movies = () => {
   const [params, setParams] = useSearchParams()
-  const page = params.get("page") || 1
+  let page = params.get("page") || 1
   let genres = params.get("genres") || ""
   let with_genres = genres.split("-").join(",").slice(1)
   
@@ -48,6 +48,7 @@ const Movies = () => {
     params.set("page", "1")
     if(!genres){
       params.delete("genres")
+      // params.delete("page")
     }else{
       params.set("genres", genres)
     }
