@@ -21,8 +21,8 @@ const Footer = () => {
          <div className="flex flex-col gap-12">
             <img className="w-[120px]" src={logo} alt="Logo" />
             <div className="flex flex-col gap-2">
-               <img className="w-[150px]" src={googleplay} alt="Google Play" />
-               <img className="w-[150px]" src={appstore} alt="App Store" />
+               <img className="w-[150px] cursor-pointer" src={googleplay} alt="Google Play" />
+               <img className="w-[150px] cursor-pointer" src={appstore} alt="App Store" />
             </div>
          </div>
          <div>
@@ -70,14 +70,14 @@ const Footer = () => {
          <div className="flex flex-col gap-14">
             <div className="flex-1">
                <h2 className="text-[#FFFFFF] text-[16px] text-weight-[500] mb-5">Contact Us</h2>
-               <p className="text-primary">+998 (95) 897-33-38</p>
+               <p className="text-primary cursor-pointer">+998 (95) 897-33-38</p>
             </div>
             <div>
                <p className="text-[#FFFFFF] text-[16px] text-weight-[500] mb-5">Social Media</p>
                <div className="flex gap-5">
-                  <img src={instagram} alt="Instagram"/>
-                  <img src={facebook} alt="Facebook"/>
-                  <img src={youtube} alt="Youtube"/>
+                  <img className="cursor-pointer" src={instagram} alt="Instagram"/>
+                  <img className="cursor-pointer" src={facebook} alt="Facebook"/>
+                  <img className="cursor-pointer" src={youtube} alt="Youtube"/>
                </div>
             </div>
          </div>

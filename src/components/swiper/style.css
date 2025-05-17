@@ -1,4 +1,120 @@
-.hero__swiper {
+.hero_swiper {
+  position: relative;
+  width: 100%;
+  padding: 20px 30px;
+  margin-bottom: 50px;
+  display: flex ;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mySwiper2 {
+  width: 100%;
+  height: 600px;
+  border-radius: 12px;
+}
+
+.mySwiper {
+  width: 500px;
+  height: 80px;
+}
+
+.mySwiper .swiper-slide {
+  width: 58px;
+  opacity: 0.4;
+  background: #000;
+  border-radius: 12px;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.thumb-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin-top: 20px;
+  width: 85%;
+}
+
+.mySwiper {
+  width: 70%;
+  height: 80px;
+}
+
+.custom-prev,
+.custom-next {
+  width: 40px;
+  height: 40px;
+  background-color: #1d1d1d;
+  color: #c61f1f;
+  border: none;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-prev:hover,
+.custom-next:hover {
+  background-color: #c61f1f;
+  color: #1d1d1d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .hero__swiper {
   position: relative;
   width: 100%;
   max-width: 1200px;
@@ -84,4 +200,4 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */

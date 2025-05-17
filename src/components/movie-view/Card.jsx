@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { IoStar } from "react-icons/io5";
 import { FaRegBookmark, FaBookmark } from "react-icons/fa";
@@ -15,7 +15,7 @@ const Card = ({movie}) => {
         <img
           src={url + movie.poster_path}
           alt={movie.title}
-          className="w-full  object-cover"
+          className="w-full  object-cover cursor-pointer"
           loading='lazy'
           onClick={() => navigate(`/movie/${movie.id}`)}
         />
@@ -29,7 +29,7 @@ const Card = ({movie}) => {
         </button> */}
         <button
           onClick={() => dispatch({ type: "SAVED", payload: movie })}
-          className="absolute top-0 right-0 m-[6px] z-10 p-2 rounded-full backdrop-blur-sm bg-black transition-all duration-300 hover:scale-110"
+          className="absolute top-0 right-0 m-[6px] z-10 p-2 cursor-pointer rounded-full backdrop-blur-sm bg-black transition-all duration-300 hover:scale-110"
         >
           {
             state.saved.some(({ id }) => id === movie.id)

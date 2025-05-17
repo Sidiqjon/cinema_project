@@ -14,9 +14,11 @@ const Header = () => {
    return (
       <header>
          <div className="py-4 px-6 flex justify-between items-center mx-auto max-h-20  lg:gap-[150px] md:gap-[80px] container">
-            <div className="flex-shrink-0">
-                  <img src={logo} alt="MovieTime Logo" />
-            </div>
+            <NavLink to={"/"}>
+                <div className="flex-shrink-0">
+                      <img className="cursor-pointer" src={logo} alt="MovieTime Logo" />
+                </div>
+            </NavLink>
             <ul className="flex justify-center items-center gap-12">
                   <li>
                       <NavLink className={"flex flex-col items-center header-link text-[13px] font-[500] text-[#A1A1A1]"} to={"/"}>
