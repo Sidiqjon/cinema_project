@@ -13,3 +13,13 @@
    padding-left: 16px;
    padding-right: 16px;
 }
+
+/* @layer utilities {
+   .no-scrollbar::-webkit-scrollbar {
+      display: none;
+   }
+   .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+   }
+} */

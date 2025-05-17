@@ -21,13 +21,14 @@
 
 import { useFetch } from "@/hooks/useFetch";
 import React from "react";
+import "./style.css";
 
 const Genres = ({ handleChangeGenre, genres }) => {
   const { data } = useFetch("/genre/movie/list");
 
   const array = genres.split("-").slice(1);
   return (
-    <div className="container mx-auto py-4 flex gap-2 overflow-auto mb-3">
+    <div className="container mx-auto py-4 flex gap-2 overflow-auto mb-3 no-scrollbar genre-scroll">
       {data?.genres?.map((genre) => (
         <div
           onClick={() => handleChangeGenre(genre.id.toString())}
