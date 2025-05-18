@@ -51,6 +51,7 @@ import { useParams } from 'react-router-dom'
 import { useFetch } from '@/hooks/useFetch'
 import MovieView from '@/components/movie-view/MovieView'
 import { IoStar } from "react-icons/io5";
+import { TbFileSad } from "react-icons/tb";
 
 const url = import.meta.env.VITE_IMAGE_URL
 
@@ -193,9 +194,18 @@ const SingleMovie = () => {
         </div>
       </div>
 
-      <div className="px-4 pb-16 pt-5">
+      <div className="pb-16 pt-5">
+        <div className='container mx-auto mb-8'>
+            <hr className='border-[1px] border-[#2D2D2D]' />
+        </div>
         <h3 className="container mx-auto text-3xl font-bold mb-6 text-white">Similar Movies</h3>
-        <MovieView movies={similars?.results?.slice(0, 8)} />
+        {
+          similars?.results?.length > 0 ? (
+            <MovieView movies={similars?.results.slice(0, 8)} />
+          ) : (
+            <h3 className="container mx-auto text-[16px] flex flex-col gap-2 items-center justify-center font-bold mb-6 text-[#4D4D4D]">No Similar Movies Found!<TbFileSad className='text-[#4D4D4D] text-4xl' /></h3>
+          )
+        }
       </div>
     </div>
   )

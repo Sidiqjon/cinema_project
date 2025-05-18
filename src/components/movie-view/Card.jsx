@@ -15,12 +15,12 @@ const Card = ({movie}) => {
         <img
           src={url + movie.poster_path}
           alt={movie.title}
-          className="w-full  object-cover cursor-pointer"
+          className="w-full  object-cover cursor-pointer "
           loading='lazy'
           onClick={() => navigate(`/movie/${movie.id}`)}
         />
         <span className=" flex gap-1 justify-center items-center absolute top-2 left-2 bg-yellow-500 text-black text-sm font-bold px-3 py-[1px] rounded-[6px]">
-          <IoStar className='text-[17px] text-yellow-200'/> {movie.vote_average.toFixed(1)}
+          <IoStar className='text-[17px] text-yellow-200'/> {movie.vote_average?.toFixed(1)}
         </span>
         {/* <button onClick={()=> dispatch({type:"SAVED", payload: movie})} className='absolute top-0 right-0 m-2 z-10  text-primary'>
           {

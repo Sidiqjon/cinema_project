@@ -1,26 +1,3 @@
-// import MovieView from '@/components/movie-view/MovieView'
-// import Skeleton from '@/components/skeleton/Skeleton'
-// import { useFetch } from '@/hooks/useFetch'
-// import React , { useState } from 'react'
-// import Genres from '@/components/genres/Genres'
-
-// const Movies = () => {
-//   const [genre, setGenre] = useState()
-//    const {data,error,loading} = useFetch("/discover/movie", {page: 1, with_genres: genre, without_genres: "18,10749,36"})
-
-//   return (
-//     <div>
-//       <Genres setGenre={setGenre} genre={genre}/>
-//       <MovieView movies={data?.results}/>
-//       {loading && <Skeleton count={20}/>}
-//     </div>
-//   )
-// }
-
-// export default Movies
-
-
-
 import Genres from '@/components/genres/Genres'
 import MovieView from '@/components/movie-view/MovieView'
 import Skeleton from '@/components/skeleton/Skeleton'
@@ -109,25 +86,11 @@ const Movies = () => {
             '& .MuiPaginationItem-root:hover': {
               backgroundColor: 'rgba(255,255,255,0.1)',
             },
+            '& .MuiPaginationItem-root.Mui-selected:hover': {
+              backgroundColor: 'rgba(250, 31, 31, 0.5)',
+            },
           }}
         />
-
-
-         {/* <Pagination count={data?.total_pages>500?500:data?.total_pages} page={Number(page)} onChange={handleChange} 
-            sx={{
-              '& .MuiPaginationItem-root': {
-                color: '#c61f1f',
-              },
-              '& .MuiPaginationItem-root.Mui-selected': {
-                backgroundColor: '#c61f1f',
-
-                color: 'white',
-              },
-              '& .MuiPaginationItem-root:hover': {
-                backgroundColor: 'rgba(255,255,255,0.1)',
-              },
-            }}
-         /> */}
       </div>
     </div>
   )
