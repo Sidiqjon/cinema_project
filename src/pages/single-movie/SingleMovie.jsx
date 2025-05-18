@@ -140,7 +140,7 @@ const SingleMovie = () => {
                 <img
                     src={url + company.logo_path}
                     alt={company.name}
-                    className="h-5 object-contain"
+                    className="h-5 object-contain bg-white"
                 />
                 )}
             </li>

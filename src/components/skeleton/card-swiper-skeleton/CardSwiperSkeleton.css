@@ -3,17 +3,19 @@
   gap: 18px;
   overflow-x: auto;
   padding-bottom: 10px;
+  scroll-snap-type: x mandatory;
 }
 
 .card-skeleton-item {
+  flex-shrink: 0;
   width: 240px;
   background-color: #1a1a1a;
   border-radius: 6px;
   overflow: hidden;
-  flex-shrink: 0;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  scroll-snap-align: start;
 }
 
 .card-skeleton-img {
@@ -48,5 +50,35 @@
 @keyframes skeleton {
   to {
     background-position: 200%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .card-skeleton-item {
+    width: 200px;
+  }
+
+  .card-skeleton-img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-skeleton-item {
+    width: 160px;
+  }
+
+  .card-skeleton-img {
+    height: 240px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-skeleton-item {
+    width: 140px;
+  }
+
+  .card-skeleton-img {
+    height: 200px;
   }
 }
