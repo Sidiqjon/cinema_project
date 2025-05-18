@@ -1,9 +1,10 @@
 import MovieView from '@/components/movie-view/MovieView';
-import Skeleton from '@/components/skeleton/Skeleton';
 import { useFetch } from '@/hooks/useFetch'
 import React from 'react'
 import HomeSwiper from '@/components/swiper/Swiper';
 import CardSwiper from '@/components/card-swiper/CardSwiper';
+import HeroSwiperSkeleton from '@/components/skeleton/hero-swiper-skeleton/HeroSwiperSkeleton';
+import CardSwiperSkeleton from '@/components/skeleton/card-swiper-skeleton/CardSwiperSkeleton';
 
 const Home = () => {
   const {data,error,loading} = useFetch("/discover/movie", {without_genres: "18,10749,36"})
@@ -16,11 +17,19 @@ const Home = () => {
   
   return (
     <div>
-      <HomeSwiper movies={data?.results}/>
-      <CardSwiper  movies={cardSwiperData?.results} />
-      {loading && <Skeleton count={20}/>}
-    </div>
-  )
-}
+      {loading ? (
+        <>
+          <HeroSwiperSkeleton />
+          <CardSwiperSkeleton count={4} />
+        </>
+      ) : (
+        <>
+          <HomeSwiper movies={data?.results} />
+          <CardSwiper movies={cardSwiperData?.results} />
+        </>
+      )}
+          </div>
+        )
+      }
 
 export default React.memo(Home)

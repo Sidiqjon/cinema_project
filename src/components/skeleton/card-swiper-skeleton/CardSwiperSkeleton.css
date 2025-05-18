@@ -1,0 +1,52 @@
+.card-skeleton-wrapper {
+  display: flex;
+  gap: 18px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.card-skeleton-item {
+  width: 240px;
+  background-color: #1a1a1a;
+  border-radius: 6px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-skeleton-img {
+  height: 360px;
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+.card-skeleton-title {
+  height: 24px;
+  width: 80%;
+  background-color: #ddd;
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+.card-skeleton-meta {
+  height: 18px;
+  width: 60%;
+  background-color: #ddd;
+  border-radius: 4px;
+  margin: 0 auto 10px;
+}
+
+.skeleton-animate {
+  background: linear-gradient(90deg, #eee, #c2c2c2, #eee);
+  background-size: 200%;
+  animation: skeleton 1s linear infinite;
+}
+
+@keyframes skeleton {
+  to {
+    background-position: 200%;
+  }
+}
