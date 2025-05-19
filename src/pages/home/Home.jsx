@@ -31,6 +31,3 @@ const Home = () => {
       }
 
 export default React.memo(Home)
-
-
-// {loading ? <HeroSwiperSkeleton /> : <HomeSwiper movies={data} />}
